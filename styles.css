@@ -45,6 +45,7 @@ body {
 }
 .profile {
     text-align: center;
+    margin-right: 40px; /* Adds space between profile and bio */
 }
 
 .contact-info {
