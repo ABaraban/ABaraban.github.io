@@ -12,23 +12,39 @@
             background-color: #f9f9f9;
             color: #333;
         }
+        .nav {
+            background-color: #333;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+            padding: 15px 30px;
+        }
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px;
             display: flex;
             align-items: center;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
         .content {
-            flex: 1;
+            max-width: 600px;
+            margin-left: 40px;
         }
         .content h1 {
-            font-size: 32px;
+            font-size: 28px;
             margin-bottom: 20px;
-            color: #222;
         }
         .content p {
-            font-size: 18px;
             line-height: 1.6;
         }
         .profile-pic {
@@ -37,43 +53,46 @@
             height: auto;
             max-width: 100%;
         }
-        .nav {
-            display: flex;
-            justify-content: flex-end;
-            margin-bottom: 40px;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        .contact-info {
+            margin-top: 10px;
+            line-height: 1.4;
         }
-        .nav a {
-            margin-left: 20px;
+        .contact-info a {
+            color: #333;
             text-decoration: none;
-            color: #007bff;
         }
-        .nav a:hover {
+        .contact-info a:hover {
             text-decoration: underline;
         }
         .footer {
             text-align: center;
             padding: 20px;
-            background-color: #fff;
+            background-color: #333;
+            color: #fff;
             box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
 
     <div class="nav">
+        <div style="flex-grow: 1; color: #fff;">Asher Baraban</div>
         <a href="CV.pdf" target="_blank">CV</a>
         <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
     </div>
 
     <div class="container">
         <img src="profile.png" alt="Profile Picture" class="profile-pic">
         <div class="content">
             <h1>Asher Baraban</h1>
-            <p>I'm currently a Pre-Doctoral Research Fellow at Opportunity Insights at Harvard University, working on analyzing racial credit disparities and optimizing big data processing.</p>
+            <p>I'm currently a Pre-Doctoral Research Fellow at Opportunity Insights at Harvard University, analyzing racial credit disparities and optimizing big data processing.</p>
             <p>I graduated summa cum laude from Washington University in St. Louis with a B.S. in Computer Science and Mathematics and an M.S. in Data Analytics and Statistics.</p>
+            <div class="contact-info">
+                <a href="mailto:asher.baraban@gmail.com">✉ asher.baraban@gmail.com</a><br>
+                <a href="https://github.com/ABaraban" target="_blank">GitHub: github.com/ABaraban</a>
+            </div>
         </div>
     </div>
 
