@@ -13,11 +13,12 @@
         }
         .nav {
             background-color: #fff;
-            padding: 15px;
-            text-align: right;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            width: 100%;
+            position: sticky;
             top: 0;
             z-index: 1000;
         }
@@ -31,55 +32,94 @@
             text-decoration: underline;
         }
         .container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            padding-top: 60px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         .profile {
             background-color: #fff;
             padding: 30px;
-            max-width: 800px;
-            width: 90%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            display: flex;
-            align-items: center;
             border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .profile img {
             border-radius: 50%;
             width: 120px;
             height: 120px;
-            margin-right: 20px;
+            margin-bottom: 20px;
         }
-        .profile-content {
-            flex: 1;
+        .profile h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
         }
-        .profile-content h1 {
-            font-size: 26px;
-            color: #333;
-            margin: 0 0 10px;
-        }
-        .profile-content p {
+        .profile p, .profile a {
             color: #555;
-            line-height: 1.6;
-            margin: 0;
+            margin: 5px 0;
+        }
+        .content {
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .content h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .research-item {
+            margin-bottom: 20px;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        .authors {
+            font-style: italic;
+            color: #666;
+        }
+        .publication {
+            color: #777;
+        }
+        .pdf-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .pdf-link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="nav">
-        <a href="CV.pdf" target="_blank">CV</a>
-        <a href="research.html">Research</a>
+        <div class="nav-title">Asher Baraban</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="CV.pdf" target="_blank">CV</a>
+            <a href="research.html">Research</a>
+        </div>
     </div>
     <div class="container">
         <div class="profile">
-            <img src="profile.jpg" alt="Profile Picture">
-            <div class="profile-content">
-                <h1>Asher Baraban</h1>
-                <p>I'm currently a Pre-Doctoral Research Fellow at Opportunity Insights at Harvard University, working on the relationship between credit markets and upward mobility.</p>
-                <p>I graduated summa cum laude from Washington University in St. Louis with a B.S. in Computer Science + Mathematics and an M.S. in Data Analytics and Statistics.</p>
+            <img src="profile.png" alt="Profile Picture">
+            <h2>Asher Baraban</h2>
+            <p>Pre-Doctoral Research Fellow</p>
+            <p>Economics at Harvard University</p>
+            <a href="mailto:asher.baraban@gmail.com">✉ Email</a>
+            <a href="https://github.com/ABaraban" target="_blank">GitHub</a>
+        </div>
+        <div class="content">
+            <h1>Research</h1>
+            <div class="research-item">
+                <div class="title">The Fixed Allocation Puzzle: Target Date Funds and Active Manager Returns</div>>
+                <a class="pdf-link" href="writing-sample.pdf" target="_blank">[PDF]</a>
             </div>
         </div>
     </div>
