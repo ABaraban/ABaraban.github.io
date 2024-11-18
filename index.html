@@ -9,119 +9,77 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+        }
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-right: 40px;
+        }
+        .content {
+            flex: 1;
+        }
+        .content h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #222;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
         }
         .nav {
-            background-color: #fff;
-            padding: 20px;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            justify-content: flex-end;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
         }
         .nav a {
-            margin: 0 15px;
+            margin-left: 20px;
             text-decoration: none;
             color: #007bff;
-            font-weight: bold;
         }
         .nav a:hover {
             text-decoration: underline;
         }
-        .container {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 40px;
-            padding: 60px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .profile {
+        .footer {
+            text-align: center;
+            padding: 20px;
             background-color: #fff;
-            padding: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .profile img {
-            border-radius: 50%;
-            width: 120px;
-            height: 120px;
-            margin-bottom: 20px;
-        }
-        .profile h2 {
-            font-size: 22px;
-            margin-bottom: 10px;
-        }
-        .profile p, .profile a {
-            color: #555;
-            margin: 5px 0;
-        }
-        .content {
-            background-color: #fff;
-            padding: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        .content h1 {
-            font-size: 28px;
-            color: #333;
-            margin-bottom: 20px;
-        }
-        .research-item {
-            margin-bottom: 20px;
-        }
-        .title {
-            font-size: 20px;
-            font-weight: bold;
-            color: #333;
-        }
-        .authors {
-            font-style: italic;
-            color: #666;
-        }
-        .publication {
-            color: #777;
-        }
-        .pdf-link {
-            color: #007bff;
-            text-decoration: none;
-        }
-        .pdf-link:hover {
-            text-decoration: underline;
+            box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
+
     <div class="nav">
-        <div class="nav-title">Asher Baraban</div>
-        <div>
-            <a href="index.html">Home</a>
-            <a href="CV.pdf" target="_blank">CV</a>
-            <a href="research.html">Research</a>
-        </div>
+        <a href="CV.pdf" target="_blank">CV</a>
+        <a href="research.html">Research</a>
     </div>
+
     <div class="container">
-        <div class="profile">
-            <img src="profile.png" alt="Profile Picture">
-            <h2>Asher Baraban</h2>
-            <p>Pre-Doctoral Research Fellow</p>
-            <p>Economics at Harvard University</p>
-            <a href="mailto:asher.baraban@gmail.com">✉ Email</a>
-            <a href="https://github.com/ABaraban" target="_blank">GitHub</a>
-        </div>
+        <img src="profile.png" alt="Profile Picture" class="profile-pic">
         <div class="content">
-            <h1>Research</h1>
-            <div class="research-item">
-                <div class="title">The Fixed Allocation Puzzle: Target Date Funds and Active Manager Returns</div>>
-                <a class="pdf-link" href="writing-sample.pdf" target="_blank">[PDF]</a>
-            </div>
+            <h1>Asher Baraban</h1>
+            <p>I'm currently a Pre-Doctoral Research Fellow at Opportunity Insights at Harvard University, working on analyzing racial credit disparities and optimizing big data processing.</p>
+            <p>I graduated summa cum laude from Washington University in St. Louis with a B.S. in Computer Science and Mathematics and an M.S. in Data Analytics and Statistics.</p>
         </div>
     </div>
+
+    <div class="footer">
+        © 2024 Asher Baraban
+    </div>
+
 </body>
 </html>
