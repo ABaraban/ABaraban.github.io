@@ -7,19 +7,15 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             background-color: #f9f9f9;
-            color: #333;
-            padding: 20px;
         }
         .nav {
             background-color: #fff;
             padding: 10px;
             text-align: right;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
         }
         .nav a {
             margin: 0 15px;
@@ -31,7 +27,42 @@
             text-decoration: underline;
         }
         .container {
-            margin-top: 60px;
+            display: flex;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .profile {
+            width: 30%;
+            text-align: center;
+            padding-right: 20px;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+        }
+        .profile h2 {
+            font-size: 18px;
+            color: #333;
+            margin-top: 10px;
+        }
+        .profile p {
+            color: #666;
+            margin: 5px 0;
+        }
+        .profile a {
+            display: block;
+            margin: 5px 0;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .content {
+            width: 70%;
+        }
+        .content h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
         }
         .research-item {
             margin-bottom: 20px;
@@ -51,8 +82,6 @@
         .pdf-link {
             color: #007bff;
             text-decoration: none;
-            display: inline-block;
-            margin-top: 5px;
         }
         .pdf-link:hover {
             text-decoration: underline;
@@ -66,10 +95,19 @@
         <a href="research.html">Research</a>
     </div>
     <div class="container">
-        <h1>Research</h1>
-        <div class="research-item">
-            <div class="publication">The Fixed Allocation Puzzle: Target Date Funds and Active Manager Returns</div>
-            <a class="pdf-link" href="writing-sample.pdf" target="_blank">[PDF]</a>
+        <div class="profile">
+            <img src="profile.jpg" alt="Profile Picture">
+            <h2>Asher Baraban</h2>
+            <p>Pre-Doctoral Research Fellow<br>in Economics</p>
+            <a href="mailto:asher.baraban@gmail.com">✉ Email</a>
+            <a href="https://github.com/ABaraban" target="_blank">GitHub</a>
+        </div>
+        <div class="content">
+            <h1>Research</h1>
+            <div class="research-item">
+                <div class="title">The Fixed Allocation Puzzle: Target Date Funds and Active Manager Returns</div>
+                <a class="pdf-link" href="writing-sample.pdf" target="_blank">[PDF]</a>
+            </div>
         </div>
     </div>
 </body>
