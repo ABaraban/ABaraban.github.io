@@ -7,16 +7,19 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            color: #333;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f5f5f5;
         }
         .nav {
             background-color: #fff;
-            padding: 10px;
+            padding: 15px;
             text-align: right;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
         .nav a {
             margin: 0 15px;
@@ -28,39 +31,40 @@
             text-decoration: underline;
         }
         .container {
-            margin: 40px auto;
-            max-width: 800px;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: flex;
-            align-items: flex-start;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding-top: 60px;
         }
-        img {
+        .profile {
+            background-color: #fff;
+            padding: 30px;
+            max-width: 800px;
+            width: 90%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            border-radius: 8px;
+        }
+        .profile img {
             border-radius: 50%;
-            margin-right: 20px;
             width: 120px;
+            height: 120px;
+            margin-right: 20px;
         }
-        .content {
-            max-width: 600px;
+        .profile-content {
+            flex: 1;
         }
-        h1 {
-            margin: 0;
-            font-size: 28px;
+        .profile-content h1 {
+            font-size: 26px;
+            color: #333;
+            margin: 0 0 10px;
+        }
+        .profile-content p {
             color: #555;
-        }
-        p {
-            margin: 10px 0;
             line-height: 1.6;
-        }
-        .cv-link {
-            color: #007bff;
-            text-decoration: none;
-            margin-top: 10px;
-            display: inline-block;
-        }
-        .cv-link:hover {
-            text-decoration: underline;
+            margin: 0;
         }
     </style>
 </head>
@@ -70,11 +74,13 @@
         <a href="research.html">Research</a>
     </div>
     <div class="container">
-        <img src="profile.png" alt="Profile Picture">
-        <div class="content">
-            <h1>Asher Baraban</h1>
-            <p>I'm currently a Pre-Doctoral Research Fellow at Opportunity Insights at Harvard University, working on the relationship between credit markets and upward mobility.</p>
-            <p>I graduated summa cum laude from Washington University in St. Louis with a B.S. in Computer Science + Mathematics and an M.S. in Data Analytics and Statistics.</p>
+        <div class="profile">
+            <img src="profile.jpg" alt="Profile Picture">
+            <div class="profile-content">
+                <h1>Asher Baraban</h1>
+                <p>I'm currently a Pre-Doctoral Research Fellow at Opportunity Insights at Harvard University, working on the relationship between credit markets and upward mobility.</p>
+                <p>I graduated summa cum laude from Washington University in St. Louis with a B.S. in Computer Science + Mathematics and an M.S. in Data Analytics and Statistics.</p>
+            </div>
         </div>
     </div>
 </body>
