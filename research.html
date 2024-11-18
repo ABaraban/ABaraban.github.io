@@ -7,30 +7,71 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
             color: #333;
             padding: 20px;
         }
-        a {
-            color: #007bff;
-            text-decoration: none;
+        .nav {
+            background-color: #fff;
+            padding: 10px;
+            text-align: right;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
         }
-        a:hover {
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .nav a:hover {
             text-decoration: underline;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
+        .container {
+            margin-top: 60px;
         }
-        li {
-            margin-bottom: 10px;
+        .research-item {
+            margin-bottom: 20px;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        .authors {
+            font-style: italic;
+            color: #666;
+        }
+        .publication {
+            color: #777;
+        }
+        .pdf-link {
+            color: #007bff;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 5px;
+        }
+        .pdf-link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>Research</h1>
-    <ul>
-        <li><a href="writing-sample.pdf" target="_blank">The Fixed Allocation Puzzle: Target Date Funds and Active Manager Returns</a></li>
-    </ul>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="CV.pdf" target="_blank">CV</a>
+        <a href="research.html">Research</a>
+        <a href="#projects">Projects</a>
+    </div>
+    <div class="container">
+        <h1>Research</h1>
+        <div class="research-item">
+            <div class="publication">The Fixed Allocation Puzzle: Target Date Funds and Active Manager Returns</div>
+            <a class="pdf-link" href="writing-sample.pdf" target="_blank">[PDF]</a>
+        </div>
+    </div>
 </body>
 </html>
